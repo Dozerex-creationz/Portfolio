@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="50" viewBox="0 0 400 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main vine -->
+  <path d="M0 25C50 25 50 40 100 40C150 40 150 10 200 10C250 10 250 40 300 40C350 40 350 25 400 25" 
+        stroke="#166534" stroke-width="4" stroke-opacity="0.6" fill="none"/>
+  
+  <!-- Small leaves along the vine -->
+  <g opacity="0.6" fill="#166534">
+    <!-- Left section leaves -->
+    <path d="M15 25C15 25 22 18 30 25C22 32 15 25 15 25Z"/>
+    <path d="M55 40C55 40 62 33 70 40C62 47 55 40 55 40Z"/>
+    <path d="M85 40C85 40 92 33 100 40C92 47 85 40 85 40Z"/>
+    
+    <!-- Middle section leaves -->
+    <path d="M175 10C175 10 182 3 190 10C182 17 175 10 175 10Z"/>
+    <path d="M215 10C215 10 222 3 230 10C222 17 215 10 215 10Z"/>
+    
+    <!-- Right section leaves -->
+    <path d="M275 40C275 40 282 33 290 40C282 47 275 40 275 40Z"/>
+    <path d="M315 40C315 40 322 33 330 40C322 47 315 40 315 40Z"/>
+    <path d="M365 25C365 25 372 18 380 25C372 32 365 25 365 25Z"/>
+  </g>
+  
+  <!-- Decorative curls -->
+  <path d="M35 25Q42 18 50 25Q42 32 35 25" stroke="#166534" stroke-width="3" stroke-opacity="0.6" fill="none"/>
+  <path d="M135 40Q142 33 150 40Q142 47 135 40" stroke="#166534" stroke-width="3" stroke-opacity="0.6" fill="none"/>
+  <path d="M235 10Q242 3 250 10Q242 17 235 10" stroke="#166534" stroke-width="3" stroke-opacity="0.6" fill="none"/>
+  <path d="M335 40Q342 33 350 40Q342 47 335 40" stroke="#166534" stroke-width="3" stroke-opacity="0.6" fill="none"/>
+</svg> 
