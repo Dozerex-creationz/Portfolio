@@ -492,28 +492,28 @@ const Contact: React.FC = () => {
               <SocialTitle>Follow Me</SocialTitle>
               <SocialLinks>
                 <SocialLink
-                  href="https://www.linkedin.com/in/your-profile"
+                  href="https://www.linkedin.com/in/dhakshin-krishna-j-1210301b2/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Linkedin />
                 </SocialLink>
                 <SocialLink
-                  href="https://github.com/your-profile"
+                  href="https://github.com/Dozerex-creationz"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github />
                 </SocialLink>
                 <SocialLink
-                  href="https://www.instagram.com/your-profile"
+                  href="https://www.instagram.com/dozerex/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Instagram />
                 </SocialLink>
                 <SocialLink
-                  href="https://twitter.com/your-profile"
+                  href="https://x.com/DozerexReignzz"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

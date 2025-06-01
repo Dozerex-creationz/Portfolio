@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      text { fill: #dcfce7; }
+      rect { fill: #166534; }
+    }
+    @media (prefers-color-scheme: light) {
+      text { fill: #166534; }
+      rect { fill: #dcfce7; }
+    }
+  </style>
+  <rect width="32" height="32" rx="6" />
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" 
+        font-family="Inter, -apple-system, sans-serif" 
+        font-weight="700" 
+        font-size="16">
+    DK
+  </text>
+</svg> 

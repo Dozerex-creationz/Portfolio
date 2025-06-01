@@ -720,7 +720,11 @@ const Projects = () => {
         </DesktopGrid>
 
         <div style={{ textAlign: "center" }}>
-          <ViewAllButton href="#">
+          <ViewAllButton
+            href="https://github.com/Dozerex-creationz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github />
             View All Projects on GitHub
           </ViewAllButton>
