@@ -22,20 +22,7 @@ const FooterSection = styled.footer`
     position: absolute;
     inset: 0;
     background: ${({ theme }) => theme.colors.patterns.leaves};
-    opacity: 0.1;
-    pointer-events: none;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background: ${({ theme }) => theme.colors.patterns.vines};
-    background-repeat: repeat-x;
-    opacity: 0.2;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.1" : "0.2")};
     pointer-events: none;
   }
 `;

@@ -23,19 +23,6 @@ const NavContainer = styled.nav`
     opacity: 0.1;
     pointer-events: none;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    right: 0;
-    height: 30px;
-    background: ${({ theme }) => theme.colors.patterns.vines};
-    background-repeat: repeat-x;
-    opacity: 0.2;
-    pointer-events: none;
-  }
 `;
 
 const NavInner = styled.div`

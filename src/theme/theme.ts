@@ -43,8 +43,8 @@ export const lightTheme = {
         "linear-gradient(to right, rgba(220, 252, 231, 0.5), rgba(240, 253, 244, 0.5))",
     },
     patterns: {
-      leaves: "url('/assets/patterns/leaf-pattern.svg')",
-      vines: "url('/assets/patterns/vine-border.svg')",
+      leaves: "url('/assets/patterns/leaf-pattern-dark.svg')",
+      vines: "url('/assets/patterns/vine-border-dark.svg')",
     },
   },
   shadows: {
@@ -105,8 +105,8 @@ export const darkTheme = {
         "linear-gradient(to right, rgba(15, 41, 24, 0.5), rgba(20, 83, 45, 0.5))",
     },
     patterns: {
-      leaves: "url('/assets/patterns/leaf-pattern.svg')",
-      vines: "url('/assets/patterns/vine-border.svg')",
+      leaves: "url('/assets/patterns/leaf-pattern-dark.svg')",
+      vines: "url('/assets/patterns/vine-border-dark.svg')",
     },
   },
   shadows: {

@@ -8,6 +8,7 @@ import {
   ArrowUp,
 } from "lucide-react";
 import styled, { keyframes } from "styled-components";
+import { toast } from "@/components/ui/sonner";
 
 const slideLeft = keyframes`
   from {
@@ -66,7 +67,7 @@ const ProjectSection = styled.section`
     position: absolute;
     inset: 0;
     background: ${({ theme }) => theme.colors.patterns.leaves};
-    opacity: 0.1;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.1" : "0.2")};
     pointer-events: none;
   }
 
@@ -76,10 +77,10 @@ const ProjectSection = styled.section`
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 50px;
     background: ${({ theme }) => theme.colors.patterns.vines};
     background-repeat: repeat-x;
-    opacity: 0.2;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.4" : "0.8")};
     transform: scaleY(-1);
     pointer-events: none;
   }
@@ -315,12 +316,12 @@ const ProjectLink = styled.a<{ variant?: "primary" | "secondary" }>`
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: ${({ theme, variant }) =>
-    variant === "primary"
-      ? theme.colors.primary[500]
-      : theme.colors.text.primary};
+  color: ${({ theme }) =>
+    theme.mode === "dark" ? "rgb(156, 163, 175)" : "rgb(156, 163, 175)"};
   font-weight: 500;
   transition: color 0.3s ease;
+  cursor: not-allowed;
+  opacity: 0.7;
 
   @media (max-width: 640px) {
     font-size: 0.875rem;
@@ -328,10 +329,8 @@ const ProjectLink = styled.a<{ variant?: "primary" | "secondary" }>`
   }
 
   &:hover {
-    color: ${({ theme, variant }) =>
-      variant === "primary"
-        ? theme.colors.primary[600]
-        : theme.colors.primary[500]};
+    color: ${({ theme }) =>
+      theme.mode === "dark" ? "rgb(156, 163, 175)" : "rgb(156, 163, 175)"};
   }
 
   svg {
@@ -582,6 +581,13 @@ const Projects = () => {
     }, 300);
   };
 
+  const handleProjectLink = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    toast("Sorry, work in progress...", {
+      description: "This project will be available soon!",
+    });
+  };
+
   return (
     <ProjectSection id="projects">
       <Container>
@@ -622,15 +628,17 @@ const Projects = () => {
 
                     <LinkContainer>
                       <ProjectLink
-                        href={projects[currentIndex].liveDemo}
+                        href="#"
                         variant="primary"
+                        onClick={handleProjectLink}
                       >
                         <ExternalLink />
                         Demo
                       </ProjectLink>
                       <ProjectLink
-                        href={projects[currentIndex].sourceCode}
+                        href="#"
                         variant="secondary"
+                        onClick={handleProjectLink}
                       >
                         <Github />
                         Code
@@ -705,11 +713,19 @@ const Projects = () => {
                 </TechStack>
 
                 <ProjectLinks>
-                  <ProjectLink href={project.liveDemo} variant="primary">
+                  <ProjectLink
+                    href="#"
+                    variant="primary"
+                    onClick={handleProjectLink}
+                  >
                     <ExternalLink />
                     Demo
                   </ProjectLink>
-                  <ProjectLink href={project.sourceCode} variant="secondary">
+                  <ProjectLink
+                    href="#"
+                    variant="secondary"
+                    onClick={handleProjectLink}
+                  >
                     <Github />
                     Code
                   </ProjectLink>

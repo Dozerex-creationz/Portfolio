@@ -31,7 +31,7 @@ const HeroSection = styled.section`
     position: absolute;
     inset: 0;
     background: ${({ theme }) => theme.colors.patterns.leaves};
-    opacity: 0.1;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.1" : "0.2")};
     pointer-events: none;
   }
 
@@ -41,10 +41,10 @@ const HeroSection = styled.section`
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 50px;
     background: ${({ theme }) => theme.colors.patterns.vines};
     background-repeat: repeat-x;
-    opacity: 0.2;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.4" : "0.8")};
     transform: scaleY(-1);
     pointer-events: none;
   }

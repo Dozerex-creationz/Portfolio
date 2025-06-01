@@ -33,7 +33,7 @@ const IconBox = styled.div`
 `;
 
 const ContactSection = styled.section`
-  padding: 3rem 0;
+  padding: 3rem 0 6rem 0;
   background: ${({ theme }) => theme.colors.gradients.subtle};
   position: relative;
   overflow: hidden;
@@ -44,7 +44,7 @@ const ContactSection = styled.section`
     position: absolute;
     inset: 0;
     background: ${({ theme }) => theme.colors.patterns.leaves};
-    opacity: 0.1;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.1" : "0.2")};
     pointer-events: none;
   }
 
@@ -54,10 +54,10 @@ const ContactSection = styled.section`
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 50px;
     background: ${({ theme }) => theme.colors.patterns.vines};
     background-repeat: repeat-x;
-    opacity: 0.2;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.4" : "0.8")};
     transform: scaleY(-1);
     pointer-events: none;
   }
@@ -215,6 +215,7 @@ const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  margin-bottom: 2rem;
 `;
 
 const InputRow = styled.div`
@@ -296,6 +297,7 @@ const SubmitButton = styled.button`
   position: relative;
   overflow: hidden;
   box-shadow: ${({ theme }) => theme.shadows.md};
+  margin-bottom: 1rem;
 
   &:hover {
     transform: translateY(-2px);
@@ -373,7 +375,7 @@ const ContactCard = styled.div`
     height: 30px;
     background: ${({ theme }) => theme.colors.patterns.vines};
     background-repeat: repeat-x;
-    opacity: 0.1;
+    opacity: ${({ theme }) => (theme.mode === "dark" ? "0.4" : "0.8")};
   }
 `;
 
