@@ -517,7 +517,14 @@ const Projects = () => {
       title: "BosNest - Enterprise Device Management",
       description:
         "Comprehensive enterprise mobility solution for device management with role-based access control and real-time monitoring capabilities.",
-      technologies: ["Spring Boot", "React.js", "Redis", "JWT"],
+      technologies: [
+        "Spring Boot",
+        "Android Enterprise",
+        "React.js",
+        "Redis",
+        "Spring-scheduler",
+        "JWT",
+      ],
       liveDemo: "#",
       sourceCode: "#",
     },
@@ -525,12 +532,12 @@ const Projects = () => {
       title: "Device Finder System",
       description:
         "Advanced device tracking and management system with location services and automated reporting features.",
-      technologies: ["Java", "Android Enterprise", "Google Pub/Sub"],
+      technologies: ["React.js", "Spring Boot", "Google Pub/Sub", "Kafka"],
       liveDemo: "#",
       sourceCode: "#",
     },
     {
-      title: "BGSS - Business Management Suite",
+      title: "BGSS - Bluebird Global Service System",
       description:
         "Business process management system with modern UI/UX and comprehensive workflow automation.",
       technologies: ["React.js", "Redux", "TanStack Tables"],
@@ -546,7 +553,7 @@ const Projects = () => {
       sourceCode: "#",
     },
     {
-      title: "Real-time Chat Application",
+      title: "Mezzala - chat app",
       description:
         "Full-featured chat application with real-time messaging, file sharing, and user authentication.",
       technologies: ["React.js", "Node.js", "Socket.io", "MongoDB"],

@@ -24,13 +24,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Check for saved theme preference or system preference
+    // Always default to light theme
     if (typeof window === "undefined") return "light";
     const saved = localStorage.getItem("theme");
-    if (saved === "dark" || saved === "light") return saved;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    // Only use saved theme if it's dark, otherwise default to light
+    return saved === "dark" ? "dark" : "light";
   });
 
   const currentTheme = theme === "dark" ? darkTheme : lightTheme;
