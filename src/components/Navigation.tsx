@@ -177,6 +177,10 @@ const Navigation: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleMobileNavClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <NavContainer>
       <NavInner>
@@ -204,10 +208,18 @@ const Navigation: React.FC = () => {
 
       <MobileNav isOpen={isOpen}>
         <MobileNavLinks>
-          <MobileNavLink href="#home">Home</MobileNavLink>
-          <MobileNavLink href="#about">About</MobileNavLink>
-          <MobileNavLink href="#projects">Projects</MobileNavLink>
-          <MobileNavLink href="#contact">Contact</MobileNavLink>
+          <MobileNavLink href="#home" onClick={handleMobileNavClick}>
+            Home
+          </MobileNavLink>
+          <MobileNavLink href="#about" onClick={handleMobileNavClick}>
+            About
+          </MobileNavLink>
+          <MobileNavLink href="#projects" onClick={handleMobileNavClick}>
+            Projects
+          </MobileNavLink>
+          <MobileNavLink href="#contact" onClick={handleMobileNavClick}>
+            Contact
+          </MobileNavLink>
         </MobileNavLinks>
       </MobileNav>
     </NavContainer>

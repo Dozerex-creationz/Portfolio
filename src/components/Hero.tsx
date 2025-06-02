@@ -335,7 +335,10 @@ const Hero: React.FC = () => {
                 <ButtonIcon as={ArrowRight} />
               </PrimaryButton>
 
-              <SecondaryButton href="/assets/resume.pdf" download>
+              <SecondaryButton
+                href="/assets/Web_Dev___Dhakshin_resume.pdf"
+                download="Dhakshin_Krishna_Resume.pdf"
+              >
                 <ButtonIcon as={Download} />
                 <ButtonText>Download CV</ButtonText>
               </SecondaryButton>
