@@ -300,30 +300,10 @@ const Hero: React.FC = () => {
   };
 
   const handleResumeDownload = () => {
-    // Show a loading toast
-    const loadingToast = toast.loading("Downloading resume...");
-
-    // Create a temporary link to download the file
-    const link = document.createElement("a");
-    link.href = "/assets/Web_Dev___Dhakshin_resume.pdf";
-    link.download = "Dhakshin_Krishna_Resume.pdf";
-
-    // Add event listener for download completion
-    link.onload = () => {
-      toast.dismiss(loadingToast);
+    // Show success toast after a small delay to ensure it appears after download starts
+    setTimeout(() => {
       toast.success("Resume downloaded successfully!");
-    };
-
-    // Add error handling
-    link.onerror = () => {
-      toast.dismiss(loadingToast);
-      toast.error("Failed to download resume. Please try again.");
-    };
-
-    // Trigger the download
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    }, 1000);
   };
 
   return (
