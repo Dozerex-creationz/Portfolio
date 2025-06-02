@@ -660,17 +660,44 @@ const Projects = () => {
               <Card direction={direction}>
                 <CardContent>
                   <CardInner>
-                    <div style={{ textAlign: "center" }}>
+                    <div
+                      style={{
+                        textAlign: "center",
+                        height: "100%",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "1.5rem",
+                      }}
+                    >
                       <Github
                         style={{
                           height: "3rem",
                           width: "3rem",
-                          marginBottom: "1rem",
                           color: "rgb(59, 130, 246)",
                         }}
                       />
                       <ProjectTitle>Want to see more?</ProjectTitle>
-                      <ViewAllButton href="#">View All Projects</ViewAllButton>
+                      <a
+                        href="https://github.com/Dozerex-creationz"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "0.5rem",
+                          padding: "0.75rem 1.5rem",
+                          background: "rgb(59, 130, 246)",
+                          color: "white",
+                          fontWeight: "600",
+                          borderRadius: "0.5rem",
+                          transition: "all 0.2s ease",
+                        }}
+                      >
+                        <Github />
+                        View All Projects on GitHub
+                      </a>
                     </div>
                   </CardInner>
                 </CardContent>

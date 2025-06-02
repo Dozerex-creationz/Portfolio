@@ -57,8 +57,8 @@ const About: React.FC = () => {
                   <SkillContent>
                     <SkillName>Frontend Development</SkillName>
                     <SkillDescription>
-                      React, Next.js, TypeScript, Styled Components, Tailwind
-                      CSS
+                      React, TypeScript, Javascript, Tailwind
+                      CSS, 
                     </SkillDescription>
                   </SkillContent>
                 </SkillCard>
@@ -70,7 +70,7 @@ const About: React.FC = () => {
                   <SkillContent>
                     <SkillName>Backend Development</SkillName>
                     <SkillDescription>
-                      Node.js, Express, NestJS, Python, Django
+                      Node.js, Express, Django, Flask, Spring Boot
                     </SkillDescription>
                   </SkillContent>
                 </SkillCard>
@@ -82,7 +82,7 @@ const About: React.FC = () => {
                   <SkillContent>
                     <SkillName>Database Management</SkillName>
                     <SkillDescription>
-                      PostgreSQL, MongoDB, Redis, MySQL
+                      MongoDB, Redis, MySQL
                     </SkillDescription>
                   </SkillContent>
                 </SkillCard>
@@ -94,7 +94,7 @@ const About: React.FC = () => {
                   <SkillContent>
                     <SkillName>DevOps & Cloud</SkillName>
                     <SkillDescription>
-                      Docker, Kubernetes, AWS, CI/CD, Git
+                      Docker, GCP, CI/CD, Git, Jenkins, 
                     </SkillDescription>
                   </SkillContent>
                 </SkillCard>
