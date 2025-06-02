@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# Portfolio Website
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and styled-components. This portfolio showcases my professional experience, projects, and technical skills with a focus on user experience and modern design principles.
 
-**URL**: https://lovable.dev/projects/bcd186c4-2d0b-4875-aade-8c6e0e7d4a7d
+## 🚀 Features
 
-## How can I edit this code?
+- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
+- **Dark/Light Mode**: Theme toggle with smooth transitions
+- **Modern UI**: Beautiful, animated interfaces with attention to detail
+- **Performance Optimized**: Fast loading times and optimized assets
+- **Interactive Elements**: Smooth scrolling, animations, and interactive components
+- **Project Showcase**: Detailed project cards with live demo and source code links
+- **Contact Form**: Easy-to-use contact form with validation
+- **Resume Download**: Direct resume download functionality with progress feedback
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend Framework**: React with TypeScript
+- **Styling**: Styled-components with custom theming
+- **State Management**: React Context API
+- **Animations**: Framer Motion & Custom CSS Animations
+- **Form Handling**: React Hook Form with validation
+- **Toast Notifications**: Custom toast system for user feedback
+- **Build Tool**: Vite
+- **Package Manager**: pnpm
+- **Version Control**: Git
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bcd186c4-2d0b-4875-aade-8c6e0e7d4a7d) and start prompting.
+## 🔜 Upcoming Features
 
-Changes made via Lovable will be committed automatically to this repo.
+### Phase 1: Content & Integration
 
-**Use your preferred IDE**
+- **Writings Section**: A new section to showcase technical articles and blog posts
+- **GitHub API Integration**: Dynamic project fetching from GitHub repositories
+- **Google Sheets Integration**: Dynamic skills and writings content management
+- **Enhanced Resume Download**: Progress tracking and completion notifications
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Phase 2: Enhanced Interactivity
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Interactive Project Demos**: Embedded project previews
+- **Advanced Animations**: More sophisticated page transitions
+- **Search & Filter**: Project and writing search functionality
+- **Tags System**: Categorization for projects and writings
 
-Follow these steps:
+### Phase 3: Performance & Analytics
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Performance Optimization**: Lazy loading and code splitting
+- **Analytics Dashboard**: Visitor tracking and interaction metrics
+- **SEO Optimization**: Enhanced meta tags and sitemap
+- **Accessibility Improvements**: WCAG compliance updates
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🚀 Getting Started
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. Clone the repository:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+   ```bash
+   git clone https://github.com/Dozerex-creationz/Portfolio.git
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+4. Build for production:
+   ```bash
+   pnpm build
+   ```
+
+## 📝 Project Structure
+
+```
+portfolio/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── hooks/         # Custom React hooks
+│   ├── pages/         # Page components
+│   ├── styles/        # Global styles and themes
+│   ├── utils/         # Utility functions
+│   └── App.tsx        # Root component
+├── public/            # Static assets
+└── package.json       # Project dependencies
 ```
 
-**Edit a file directly in GitHub**
+## 🤝 Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/Dozerex-creationz/Portfolio/issues).
 
-**Use GitHub Codespaces**
+## 📜 License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project is [MIT](./LICENSE) licensed.
 
-## What technologies are used for this project?
+## 👨‍💻 Author
 
-This project is built with:
+**Dhakshin Krishna J**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bcd186c4-2d0b-4875-aade-8c6e0e7d4a7d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Website: [Portfolio](https://dozerex-creationz.github.io/Portfolio)
+- GitHub: [@Dozerex-creationz](https://github.com/Dozerex-creationz)
+- LinkedIn: [Dhakshin Krishna](https://linkedin.com/in/dhakshin-krishna)
