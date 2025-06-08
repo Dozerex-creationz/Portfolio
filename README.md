@@ -27,51 +27,26 @@ A modern, responsive portfolio website built with React, TypeScript, and styled-
 
 ## 🔜 Upcoming Features
 
-### Phase 1: Content & Integration
+### Phase 2: Content & Integration
 
 - **Writings Section**: A new section to showcase technical articles and blog posts
 - **GitHub API Integration**: Dynamic project fetching from GitHub repositories
 - **Google Sheets Integration**: Dynamic skills and writings content management
 - **Enhanced Resume Download**: Progress tracking and completion notifications
 
-### Phase 2: Enhanced Interactivity
+### Phase 3: Enhanced Interactivity
 
 - **Interactive Project Demos**: Embedded project previews
 - **Advanced Animations**: More sophisticated page transitions
 - **Search & Filter**: Project and writing search functionality
 - **Tags System**: Categorization for projects and writings
 
-### Phase 3: Performance & Analytics
+### Phase 4: Performance & Analytics
 
 - **Performance Optimization**: Lazy loading and code splitting
 - **Analytics Dashboard**: Visitor tracking and interaction metrics
 - **SEO Optimization**: Enhanced meta tags and sitemap
 - **Accessibility Improvements**: WCAG compliance updates
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Dozerex-creationz/Portfolio.git
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   pnpm install
-   ```
-
-3. Start the development server:
-
-   ```bash
-   pnpm dev
-   ```
-
-4. Build for production:
-   ```bash
-   pnpm build
-   ```
 
 ## 📝 Project Structure
 
