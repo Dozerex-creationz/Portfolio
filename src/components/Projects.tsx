@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import styled, { keyframes } from "styled-components";
 import { toast } from "@/components/ui/sonner";
+import portfolio from "@/data/portfolio.json";
 
 const slideLeft = keyframes`
   from {
@@ -495,6 +496,8 @@ const Projects = () => {
   const [direction, setDirection] = useState<"left" | "right" | null>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
+  const projects = portfolio.projects;
+
   useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById("hero");
@@ -511,64 +514,6 @@ const Projects = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  const projects = [
-    {
-      title: "BosNest - Enterprise Device Management",
-      description:
-        "Comprehensive enterprise mobility solution for device management with role-based access control and real-time monitoring capabilities.",
-      technologies: [
-        "Spring Boot",
-        "Android Enterprise",
-        "React.js",
-        "Redis",
-        "Spring-scheduler",
-        "JWT",
-      ],
-      liveDemo: "#",
-      sourceCode: "#",
-    },
-    {
-      title: "Device Finder System",
-      description:
-        "Advanced device tracking and management system with location services and automated reporting features.",
-      technologies: ["React.js", "Spring Boot", "Google Pub/Sub", "Kafka"],
-      liveDemo: "#",
-      sourceCode: "#",
-    },
-    {
-      title: "BGSS - Bluebird Global Service System",
-      description:
-        "Business process management system with modern UI/UX and comprehensive workflow automation.",
-      technologies: ["React.js", "Redux", "TanStack Tables"],
-      liveDemo: "#",
-      sourceCode: "#",
-    },
-    {
-      title: "Voice-Based Hotel Booking",
-      description:
-        "Innovative voice-controlled hotel booking system using natural language processing and speech recognition.",
-      technologies: ["Python", "NLP", "Voice Processing"],
-      liveDemo: "#",
-      sourceCode: "#",
-    },
-    {
-      title: "Mezzala - chat app",
-      description:
-        "Full-featured chat application with real-time messaging, file sharing, and user authentication.",
-      technologies: ["React.js", "Node.js", "Socket.io", "MongoDB"],
-      liveDemo: "#",
-      sourceCode: "#",
-    },
-    {
-      title: "NLP Analysis System",
-      description:
-        "Comprehensive natural language processing system for text analysis and sentiment detection.",
-      technologies: ["Python", "Machine Learning", "NLP", "Flask"],
-      liveDemo: "#",
-      sourceCode: "#",
-    },
-  ];
 
   const nextProject = () => {
     setDirection("left");

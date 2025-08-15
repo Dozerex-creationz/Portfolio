@@ -8,6 +8,14 @@ import {
   ChevronUp,
 } from "lucide-react";
 import styled from "styled-components";
+import portfolio from "@/data/portfolio.json";
+
+const iconMap: Record<string, JSX.Element> = {
+  code: <Code2 />,
+  server: <Server />,
+  database: <Database />,
+  globe: <Globe />,
+};
 
 const About: React.FC = () => {
   const [isSkillsOpen, setIsSkillsOpen] = useState(() => {
@@ -50,54 +58,15 @@ const About: React.FC = () => {
             </AccordionHeader>
             <AccordionContent isOpen={isSkillsOpen}>
               <SkillsList>
-                <SkillCard>
-                  <SkillIcon>
-                    <Code2 />
-                  </SkillIcon>
-                  <SkillContent>
-                    <SkillName>Frontend Development</SkillName>
-                    <SkillDescription>
-                      React, TypeScript, Javascript, Tailwind
-                      CSS, 
-                    </SkillDescription>
-                  </SkillContent>
-                </SkillCard>
-
-                <SkillCard>
-                  <SkillIcon>
-                    <Server />
-                  </SkillIcon>
-                  <SkillContent>
-                    <SkillName>Backend Development</SkillName>
-                    <SkillDescription>
-                      Node.js, Express, Django, Flask, Spring Boot
-                    </SkillDescription>
-                  </SkillContent>
-                </SkillCard>
-
-                <SkillCard>
-                  <SkillIcon>
-                    <Database />
-                  </SkillIcon>
-                  <SkillContent>
-                    <SkillName>Database Management</SkillName>
-                    <SkillDescription>
-                      MongoDB, Redis, MySQL
-                    </SkillDescription>
-                  </SkillContent>
-                </SkillCard>
-
-                <SkillCard>
-                  <SkillIcon>
-                    <Globe />
-                  </SkillIcon>
-                  <SkillContent>
-                    <SkillName>DevOps & Cloud</SkillName>
-                    <SkillDescription>
-                      Docker, GCP, CI/CD, Git, Jenkins, 
-                    </SkillDescription>
-                  </SkillContent>
-                </SkillCard>
+                {portfolio.skills.map((skill, index) => (
+                  <SkillCard key={index}>
+                    <SkillIcon>{iconMap[skill.icon] ?? <Code2 />}</SkillIcon>
+                    <SkillContent>
+                      <SkillName>{skill.name}</SkillName>
+                      <SkillDescription>{skill.description}</SkillDescription>
+                    </SkillContent>
+                  </SkillCard>
+                ))}
               </SkillsList>
             </AccordionContent>
           </SkillsAccordion>
