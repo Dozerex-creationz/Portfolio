@@ -345,7 +345,7 @@ const Hero: React.FC = () => {
 
               <SecondaryButton
                 onClick={handleResumeDownload}
-                href="/assets/Web_Dev___Dhakshin_resume.pdf"
+                href="/assets/Full Stack Dev Dhakshin Sept 2025.pdf"
                 download="Dhakshin_Krishna_Resume.pdf"
               >
                 <ButtonIcon as={Download} />
